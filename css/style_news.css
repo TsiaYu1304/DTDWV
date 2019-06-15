@@ -1,0 +1,100 @@
+*{
+    margin:0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav"
+                        "header"
+                         "main "
+                         "member "
+                         "footer ";
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+  .header{
+    grid-area: header;
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    background-image: url(../img/img_News_header.jpg);
+    background-position: center;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.8fr 0.2fr;
+    grid-template-areas:". ."
+                        ". header_title";
+  }
+  .header_title{
+    grid-area: header_title;
+    font-family: "serif";
+    font-size: 4vw;
+    font-weight: 5px;
+    color:#fff;
+  }
+  .main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns:[line1]20vh[line2]30vh[line3]1fr[line4]20vh[end];
+    grid-template-rows:[line1]10vh[line2]30vh[line3]30vh[line4]30vh[line5]10vh[end];
+  }
+  .news_img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin:10%;
+  }
+  .news_intro{
+    font-family: '華康中圓體';
+    color:#484041;
+    margin:3%;
+    line-height: 1.2;
+  }
+  .news_img_1{
+    grid-column: line2/line3;
+    grid-row:line2/line3;
+    background-image: url(../img/img_Landing_new2.jpg);
+  
+  }
+  .news_img_2{
+    grid-column: line2/line3;
+    grid-row:line3/line4;
+    background-image: url(../img/img_News_new2.jpg);
+  }
+  .news_img_3{
+    grid-column: line2/line3;
+    grid-row:line4/line5;
+    background-image: url(../img/img_News_new3.jpg);
+  }
+  .news_intro_1{
+    grid-column: line3/line4;
+    grid-row:line2/line3;
+  }
+  .news_intro_2{
+    grid-column: line3/line4;
+    grid-row:line3/line4;
+  }
+  .news_intro_3{
+    grid-column: line3/line4;
+    grid-row:line4/line5;
+  }
+  .news_line_1{
+    grid-column: line2/line4;
+    grid-row:line2/line3;
+    border-bottom: 2px solid #66CCB0;
+  }
+  .news_line_2{
+    grid-column: line2/line4;
+    grid-row:line3/line4;
+    border-bottom: 2px solid #66CCB0;
+  }
+  .news_font_big{
+      font-size: 2em;
+  }
+  .news_font_mid{
+    font-size: 1.5em;
+}
+
+
+
